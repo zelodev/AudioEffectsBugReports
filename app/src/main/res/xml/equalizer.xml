@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <SwitchPreference
+        android:key="equalizer_enable"
+        android:title="Enable" />
+
+    <Preference
+        android:title="Toggle preset"
+        android:key="toggle_preset"/>
+
+    <SeekBarPreference
+        android:key="equalizer_band_0"
+        android:title="Band 0"
+        app:showSeekBarValue="true"
+        app:min="-1000"
+        android:max="1000"
+        app:updatesContinuously="true" />
+
+    <SeekBarPreference
+        android:key="equalizer_band_1"
+        android:title="Band 1"
+        app:showSeekBarValue="true"
+        app:min="-1000"
+        android:max="1000"
+        app:updatesContinuously="true" />
+
+    <SeekBarPreference
+        android:key="equalizer_band_2"
+        android:title="Band 2"
+        app:showSeekBarValue="true"
+        app:min="-1000"
+        android:max="1000"
+        app:updatesContinuously="true" />
+
+    <SeekBarPreference
+        android:key="equalizer_band_3"
+        android:title="Band 3"
+        app:showSeekBarValue="true"
+        app:min="-1000"
+        android:max="1000"
+        app:updatesContinuously="true" />
+
+    <SeekBarPreference
+        android:key="equalizer_band_4"
+        android:title="Band 4"
+        app:showSeekBarValue="true"
+        app:min="-1000"
+        android:max="1000"
+        app:updatesContinuously="true" />
+
+</androidx.preference.PreferenceScreen>

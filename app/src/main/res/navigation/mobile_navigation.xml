@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_dynamics_processing">
+
+    <fragment
+        android:id="@+id/nav_dynamics_processing"
+        android:name="com.example.audioeffects.ui.dynamicsprocessing.DynamicsProcessingFragment"
+        android:label="Dynamics processing" />
+
+    <fragment
+        android:id="@+id/nav_virtualizer"
+        android:name="com.example.audioeffects.ui.virtualizer.VirtualizerFragment"
+        android:label="Virtualizer" />
+
+    <fragment
+        android:id="@+id/nav_preset_reverb"
+        android:name="com.example.audioeffects.ui.presetreverb.PresetReverbFragment"
+        android:label="Preset Reverb" />
+
+    <fragment
+        android:id="@+id/nav_bass_boost"
+        android:name="com.example.audioeffects.ui.bassboost.BassBoostFragment"
+        android:label="Bass boost" />
+
+    <fragment
+        android:id="@+id/nav_haptic_generator"
+        android:name="com.example.audioeffects.ui.hapticgenerator.HapticGeneratorFragment"
+        android:label="Haptic generator" />
+
+    <fragment
+        android:id="@+id/nav_environmental_reverb"
+        android:name="com.example.audioeffects.ui.environmentalreverb.EnvironmentalReverbFragment"
+        android:label="Environmental reverb" />
+
+    <fragment
+        android:id="@+id/nav_equalizer"
+        android:name="com.example.audioeffects.ui.equalizer.EqualizerFragment"
+        android:label="Equalizer" />
+
+    <fragment android:id="@+id/nav_loudness_enhancer"
+        android:name="com.example.audioeffects.ui.loudnessenhancer.LoudnessEnhancerFragment"
+        android:label="Loudness enhancer" />
+</navigation>

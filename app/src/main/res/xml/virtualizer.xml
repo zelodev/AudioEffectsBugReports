@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <SwitchPreference
+        app:key="virtualizer_enable"
+        app:title="enable" />
+
+    <SeekBarPreference
+        app:key="virtualizer_strength"
+        android:max="1000"
+        app:title="strength"
+        app:showSeekBarValue="true"
+        app:updatesContinuously="true" />
+
+</androidx.preference.PreferenceScreen>

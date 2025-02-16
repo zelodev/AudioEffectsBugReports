@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <SwitchPreference
+        android:key="environmental_reverb_enable"
+        android:title="Enable" />
+
+    <SeekBarPreference
+        android:key="decay_hf_ratio"
+        android:max="2000"
+        android:title="Decay HF ratio"
+        app:min="100"
+        app:showSeekBarValue="true"
+        app:updatesContinuously="true" />
+
+    <SeekBarPreference
+        android:key="decay_time"
+        android:max="20000"
+        android:title="Decay time"
+        app:min="100"
+        app:showSeekBarValue="true"
+        app:updatesContinuously="true" />
+
+    <SeekBarPreference
+        android:key="density"
+        android:max="1000"
+        android:title="Density"
+        app:showSeekBarValue="true"
+        app:updatesContinuously="true" />
+
+    <SeekBarPreference
+        android:key="diffusion"
+        android:max="1000"
+        android:title="Diffusion"
+        app:showSeekBarValue="true"
+        app:updatesContinuously="true" />
+
+    <SeekBarPreference
+        android:key="reflections_delay"
+        android:max="300"
+        android:title="Reflections delay"
+        app:showSeekBarValue="true"
+        app:updatesContinuously="true" />
+
+    <SeekBarPreference
+        android:key="reflections_level"
+        android:max="1000"
+        android:title="Reflections level"
+        app:min="-9000"
+        app:showSeekBarValue="true"
+        app:updatesContinuously="true" />
+
+
+    <SeekBarPreference
+        android:key="reverb_delay"
+        android:title="Reverb delay"
+        app:showSeekBarValue="true"
+        app:updatesContinuously="true" />
+
+    <SeekBarPreference
+        android:key="reverb_level"
+        android:max="2000"
+        android:title="Reverb level"
+        app:min="-9000"
+        app:showSeekBarValue="true"
+        app:updatesContinuously="true" />
+
+    <SeekBarPreference
+        android:key="room_hf_level"
+        android:max="0"
+        android:title="Room HF level"
+        app:min="-9000"
+        app:showSeekBarValue="true"
+        app:updatesContinuously="true" />
+
+    <SeekBarPreference
+        android:key="room_level"
+        android:max="0"
+        android:title="Room level"
+        app:min="-9000"
+        app:showSeekBarValue="true"
+        app:updatesContinuously="true" />
+
+</androidx.preference.PreferenceScreen>

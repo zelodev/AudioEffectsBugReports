@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <SwitchPreference
+        android:key="dynamics_processing_enable"
+        android:title="DPE Enable" />
+
+    <PreferenceCategory android:title="DPE config">
+
+        <SeekBarPreference
+            android:key="pre_eq_bandcount"
+            android:max="35"
+            android:title="Pre EQ bandcount"
+            app:defaultValue="31"
+            app:min="30"
+            app:showSeekBarValue="true"
+            app:updatesContinuously="true" />
+
+        <SeekBarPreference
+            android:key="preferred_time_duration"
+            android:max="20"
+            android:title="Preferred time duration"
+            app:defaultValue="10"
+            app:min="1"
+            app:showSeekBarValue="true"
+            app:updatesContinuously="true" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Pre eq">
+
+        <SwitchPreference
+            android:key="pre_eq_enable"
+            android:title="Pre EQ enable" />
+
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="MBC">
+
+        <SwitchPreference
+            android:key="mbc_enable"
+            android:title="MBC Enable" />
+
+        <SeekBarPreference
+            android:key="mbc_gain"
+            android:max="5"
+            android:title="Gain (dB)"
+            app:min="-5"
+            app:showSeekBarValue="true"
+            app:updatesContinuously="true" />
+
+        <SeekBarPreference
+            android:key="mbc_frequency"
+            android:max="300"
+            android:title="Frequency (hz)"
+            app:defaultValue="200"
+            app:min="10"
+            app:showSeekBarValue="true"
+            app:updatesContinuously="true" />
+
+        <SeekBarPreference
+            android:key="mbc_ratio"
+            android:title="Mbc ratio"
+            android:summary="value * 0.02f + 0.9f"
+            app:showSeekBarValue="true"
+            app:defaultValue="5"
+            app:updatesContinuously="true" />
+
+        <SeekBarPreference
+            android:key="mbc_expander_ratio"
+            app:defaultValue="5"
+            android:title="Mbc expander ratio"
+            android:summary="value * 0.02f + 0.9f"
+            app:showSeekBarValue="true"
+            app:updatesContinuously="true" />
+
+    </PreferenceCategory>
+
+</androidx.preference.PreferenceScreen>

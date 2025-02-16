@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_dynamics_processing"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Dymamics Processing" />
+        <item
+            android:id="@+id/nav_virtualizer"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Virtualizer" />
+        <item
+            android:id="@+id/nav_preset_reverb"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Preset reverb" />
+        <item
+            android:id="@+id/nav_bass_boost"
+            android:icon="@drawable/baseline_speaker_24"
+            android:title="Bass boost" />
+        <item
+            android:id="@+id/nav_haptic_generator"
+            android:title="Haptic generator" />
+        <item
+            android:id="@+id/nav_environmental_reverb"
+            android:title="Environmental reverb" />
+        <item
+            android:id="@+id/nav_equalizer"
+            android:title="Equalizer" />
+        <item
+            android:id="@+id/nav_loudness_enhancer"
+            android:title="Loudness enhancer" />
+    </group>
+
+</menu>

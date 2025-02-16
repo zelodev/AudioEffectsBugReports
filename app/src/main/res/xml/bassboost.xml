@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <SwitchPreference
+        android:key="bass_boost_enable"
+        android:title="enable" />
+
+    <SeekBarPreference
+        android:key="bass_boost_strenght"
+        android:max="1000"
+        android:title="Strength"
+        app:showSeekBarValue="true"
+        app:updatesContinuously="true" />
+
+</androidx.preference.PreferenceScreen>

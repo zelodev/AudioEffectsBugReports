@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <SwitchPreference
+        app:defaultValue="false"
+        app:key="preset_reverb_enable"
+        app:title="enable" />
+
+    <SeekBarPreference
+        app:defaultValue="4"
+        app:key="preset_reverb_preset"
+        app:showSeekBarValue="true"
+        android:max="6"
+        app:title="preset" />
+
+</PreferenceScreen>
